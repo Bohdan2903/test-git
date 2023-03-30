@@ -1,0 +1,11 @@
+@import "./resert.css";
+
+
+body {
+    background: aqua;
+}
+
+.h1 {
+    font-size: large;
+    text-align: center;
+}
