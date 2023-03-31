@@ -2,10 +2,67 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>table</title>
+    <style>
+        .table-color-1 {
+            background-color: #ffe4c4;
+        }
+        .table-color-2 {
+            background-color: #ffc0cb;
+        }
+        .table, .cell, .row {
+            border: 1px solid black;
+        }
+    </style>
+
 </head>
 <body>
-    Test Romanko
+
+    <table class="table" cellpadding="10" align="center" width="500" height="300">
+        <thead class="table-color-2">
+            <tr class="row">
+                <td class="cell" colspan="4" align="center">
+                    My first table
+                </td>
+
+        </thead>
+
+        <tbody>
+            <tr class="table-color-2">
+                <td class="cell">
+                    First cell
+                </td>
+                <td class="cell">
+                    Second cell
+                </td>
+                <td rowspan="3" colspan="4" align="center" class="table-color-1 cell">
+                    six cells merged together
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center" class="table-color-1 cell">
+                    2 cells merged into one
+                </td>
+            </tr>
+            <tr class="table-color-1">
+                <td class="cell">
+                    1st cell 3rd row
+                </td>
+                <td class="cell">
+                    2nd cell 3rd row
+                </td>
+
+            </tr>
+        </tbody>
+
+        <tfoot class="table-color-1">
+            <tr>
+                <td colspan="4" align="center" class="cell">
+                    Do you like tables?
+                </td>
+            </tr>
+        </tfoot>
+    </table>
 
 </body>
 </html>
